@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1oH-wP-M0q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play-->
+        <scene sceneID="AHs-cO-nqR">
+            <objects>
+                <navigationController id="qup-Qg-NhY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Play" id="EPR-rW-dJn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DTk-Gf-4Op">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YWM-ZJ-k0Q" kind="relationship" relationship="rootViewController" id="fRw-yK-4v9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6C-qR-8yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2634" y="1664"/>
+        </scene>
+        <!--Play-->
+        <scene sceneID="4Ji-mX-ppv">
+            <objects>
+                <tableViewController id="YWM-ZJ-k0Q" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xak-4i-EQG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eay-5V-W6s">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eay-5V-W6s" id="KzM-0x-eTu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YWM-ZJ-k0Q" id="pLW-7U-MOd"/>
+                            <outlet property="delegate" destination="YWM-ZJ-k0Q" id="eS2-fO-FNu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Play" id="DS4-b6-ejT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yBk-Cb-UPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1842" y="1664"/>
+        </scene>
+        <!--Practise-->
+        <scene sceneID="etS-MM-CoM">
+            <objects>
+                <navigationController id="gMl-JA-JSP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Practise" id="f3T-yH-YUO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uRF-Ah-Bts">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jsa-jl-dpg" kind="relationship" relationship="rootViewController" id="nzj-wx-joM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxg-NL-i2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2764" y="705"/>
+        </scene>
+        <!--Practise-->
+        <scene sceneID="iib-ZM-leW">
+            <objects>
+                <tableViewController id="Jsa-jl-dpg" customClass="PractiseTableViewController" customModule="AudioDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XED-oh-pog">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PractiseCell" textLabel="uUt-Md-UlU" detailTextLabel="qQg-J5-OcG" style="IBUITableViewCellStyleSubtitle" id="5Ai-51-Ve4">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ai-51-Ve4" id="3H9-j0-2IF">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uUt-Md-UlU">
+                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qQg-J5-OcG">
+                                            <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wPm-Yl-PLt" kind="push" id="vGV-fY-b37"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Jsa-jl-dpg" id="pbD-pz-e6H"/>
+                            <outlet property="delegate" destination="Jsa-jl-dpg" id="skv-Rr-2Z0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Practise" id="8UH-Tw-I8j"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpG-fl-oUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1927" y="705"/>
+        </scene>
+        <!--Audio Record View Controller-->
+        <scene sceneID="8DA-d8-1xh">
+            <objects>
+                <viewController id="wPm-Yl-PLt" customClass="AudioRecordViewController" customModule="AudioDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pBI-t2-PMZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="pNL-eU-2b9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CCf-Tr-ZaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gJ-k4-GFK">
+                                <rect key="frame" x="109" y="133" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始录音"/>
+                                <connections>
+                                    <action selector="startRecord:" destination="wPm-Yl-PLt" eventType="touchUpInside" id="Fov-VU-Dto"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJD-42-x3C">
+                                <rect key="frame" x="109" y="220" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="停止录音"/>
+                                <connections>
+                                    <action selector="stopRecord:" destination="wPm-Yl-PLt" eventType="touchUpInside" id="Khr-yX-Vk2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="464-2Q-el7">
+                                <rect key="frame" x="109" y="302" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始播放"/>
+                                <connections>
+                                    <action selector="startPlaying:" destination="wPm-Yl-PLt" eventType="touchUpInside" id="Dfz-lg-Rs6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8z-n5-JcN">
+                                <rect key="frame" x="109" y="393" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="暂停播放"/>
+                                <connections>
+                                    <action selector="pausePlaying:" destination="wPm-Yl-PLt" eventType="touchUpInside" id="mdo-fN-ZlC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2t-Yf-rk2">
+                                <rect key="frame" x="115" y="485" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="停止播放"/>
+                                <connections>
+                                    <action selector="stopPlaying:" destination="wPm-Yl-PLt" eventType="touchUpInside" id="w5S-BN-Jmr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zfC-ew-9Np"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xn-ud-Q71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1039.2" y="699.40029985007504"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Sc5-yx-gSg">
+            <objects>
+                <tabBarController id="1oH-wP-M0q" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="71G-7i-h6A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gMl-JA-JSP" kind="relationship" relationship="viewControllers" id="HCq-O0-3jX"/>
+                        <segue destination="qup-Qg-NhY" kind="relationship" relationship="viewControllers" id="rEg-Dj-dok"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLS-3j-dKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3575" y="1524"/>
+        </scene>
+    </scenes>
+</document>
